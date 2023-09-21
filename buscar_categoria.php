@@ -1,9 +1,18 @@
 <?php
 	include 'cors_policy.php';
 	include 'conexao.php';
-    
-    if ($_SERVER['REQUEST_METHOD'] == 'GET'){
-        $id = $_GET['id']; //nome do GET
+    //POST
+
+
+    // if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+         // Obtém o corpo da solicitação POST
+        //  $data = file_get_contents("php://input");
+        //  // Decodifica o JSON para um objeto PHP
+        // $requestData = json_decode($data);
+        // // Agora você pode acessar os dados usando $requestData
+        // $id = $requestData->id; //nome do GET
+
+        $id = 5;
 
         $sql = "SELECT * FROM Categorias WHERE id=$id";
 
@@ -26,5 +35,5 @@
         }
     
         echo json_encode($response);
-    }
+    // }
 ?>
