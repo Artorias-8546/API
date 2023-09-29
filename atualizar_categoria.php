@@ -12,10 +12,10 @@
         // // Agora você pode acessar os dados usando $requestData
         // $id = $requestData->id; //nome do GET
 
-        $id = 2;
-        $nome = fg;
+        $id = 5;
+        $nome = "asdad";
 
-        $sql = "UPDATE  '$nome' INTO Categorias WHERE id = $id";
+        $sql = "UPDATE categorias SET nome='$nome' WHERE id = $id";
 
         if($connection->query($sql) == true){
             $response = [

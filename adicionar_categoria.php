@@ -15,7 +15,7 @@
         // $id = 2;
         $nome = 'infraestrutura';
 
-        $sql = "INSERT INTO Categorias VALUES (0, '$nome')";
+        $sql = "INSERT INTO categorias VALUES (0, '$nome')";
 
         if($connection->query($sql) == true){
             $response = [

@@ -14,7 +14,7 @@
 
         $id = 5;
 
-        $sql = "SELECT * FROM Categorias WHERE id=$id";
+        $sql = "SELECT * FROM categorias WHERE id=$id";
 
         $result = $connection->query($sql);
     

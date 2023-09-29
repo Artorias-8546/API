@@ -14,7 +14,7 @@
 
         $id = 2;
 
-        $sql = "DELETE FROM Categorias WHERE id = $id";
+        $sql = "DELETE FROM categorias WHERE id = $id";
 
         if($connection->query($sql) == true){
             $response = [
